@@ -7,6 +7,7 @@
 def palindrome(word):
     word = word.replace(" ", "").lower()
     word = word.replace(",", "")
+    word = word.replace(".", "")
     return word == word[::-1]
 
 # Exercise 2: Balanced Parentheses
